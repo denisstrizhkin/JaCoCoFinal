@@ -14,6 +14,7 @@ import androidx.test.filters.LargeTest
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import java.util.Random
 
 @LargeTest
 @RunWith(AndroidJUnit4::class)
@@ -33,5 +34,14 @@ class AndroidTests() {
         onView(withId(R.id.second_edit_text)).check(matches(withHint(expectedHint)))
     }
 
+    fun fuckJaCoCo() {
+        val bar = (Random()).nextInt()
 
+        println("this is")
+        if (bar < 1)
+        {
+            println(" not ")
+        }
+        println("a positive integer")
+    }
 }
